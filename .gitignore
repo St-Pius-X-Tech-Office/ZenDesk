@@ -1,0 +1,9 @@
+# Don't upload the actual credential files
+credentials.json
+
+# Don't upload the gitignore file
+*.gitignore.swp
+
+
+# Don't upload test files
+*.pbix
