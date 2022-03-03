@@ -7,3 +7,4 @@ credentials.json
 
 # Don't upload test files
 *.pbix
+test.py
