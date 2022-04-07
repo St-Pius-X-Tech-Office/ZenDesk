@@ -1,8 +1,12 @@
-import requests
-import pandas as pd
 import datetime
 import dateutil
 import json
+import logging
+import pandas as pd
+import requests
+
+# Set logging parameters
+logging.basicConfig(format="[%(levelname)s]: %(message)s", level=logging.INFO)
 
 
 def getData():
@@ -30,7 +34,7 @@ def getData():
     # Get URL for tickets
     url = f"{zendesk}/api/v2/search.json?query=type:ticket created>{fixed_month_url}"
     response = requests.get(url, auth=(credentials))
-    print(response)
+    logging.info(response)
 
     # Make Dataframe
     data = response.json()
