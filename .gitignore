@@ -5,7 +5,7 @@ credentials.json
 *.gitignore.swp
 
 # Don't upload CSV data
-.csv
+*.csv
 
 # Don't upload test files
 *.pbix
